@@ -1,4 +1,7 @@
 package com.crud.library.domain;
 
-public class ItemStatus {
+public enum ItemStatus {
+    FREE,
+    BORROWED,
+    LOST
 }
