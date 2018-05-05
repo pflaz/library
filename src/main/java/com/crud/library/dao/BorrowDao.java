@@ -1,20 +1,23 @@
 package com.crud.library.dao;
 
-import com.crud.library.domain.Item;
+import com.crud.library.domain.Borrow;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface ItemDao extends CrudRepository<Item, Integer> {
+public interface BorrowDao extends CrudRepository<Borrow, Integer> {
     @Override
-    List<Item> findAll();
+    List<Borrow> findAll();
 
-    Optional<Item> findById(int id);
+    Optional<Borrow> findById(int id);
 
     @Override
-    Item save(Item item);
+    Borrow save(Borrow borrow);
 
     @Override
     void delete(Integer id);
+
+
+
 }

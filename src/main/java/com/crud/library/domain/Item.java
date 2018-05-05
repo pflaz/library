@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity (name = "ITEMS")
 @NoArgsConstructor
@@ -14,7 +16,7 @@ public class Item {
     @Id
     @GeneratedValue
     @Column(name = "ID")
-    private Integer id;
+    private int id;
 
     @ManyToOne(
             fetch = FetchType.EAGER
@@ -24,6 +26,13 @@ public class Item {
 
     @Column(name = "STATUS")
     private ItemStatus status;
+
+    @OneToMany(
+            fetch = FetchType.LAZY,
+            targetEntity = Borrow.class,
+            mappedBy = "item"
+    )
+    private List<Borrow> borrowList = new ArrayList<>();
 
     public Item(Title title, ItemStatus status) {
         this.title = title;

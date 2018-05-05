@@ -16,7 +16,7 @@ public class Title {
     @Id
     @GeneratedValue
     @Column(name = "ID")
-    private Integer id;
+    private int id;
     @Column(name = "TITLE")
     private String title;
     @Column(name = "AUTHOR")
