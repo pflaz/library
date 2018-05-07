@@ -22,7 +22,7 @@ public class Title {
     @Column(name = "AUTHOR")
     private String author;
     @Column(name = "RELEASE_YEAR")
-    private Integer releaseYear;
+    private int releaseYear;
     @OneToMany(
             targetEntity = Item.class,
             mappedBy = "title",
@@ -31,7 +31,7 @@ public class Title {
     )
     private List<Item> itemList = new ArrayList<>();
 
-    public Title(String title, String author, Integer releaseYear) {
+    public Title(String title, String author, int releaseYear) {
         this.title = title;
         this.author = author;
         this.releaseYear = releaseYear;

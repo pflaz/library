@@ -1,4 +1,4 @@
-package com.crud.library.dao;
+package com.crud.library.repository;
 
 import com.crud.library.domain.Title;
 import org.junit.Assert;
@@ -7,8 +7,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import static org.junit.Assert.*;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)

@@ -1,4 +1,4 @@
-package com.crud.library.dao;
+package com.crud.library.repository;
 
 import com.crud.library.domain.Reader;
 import org.junit.Assert;

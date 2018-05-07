@@ -1,4 +1,4 @@
-package com.crud.library.dao;
+package com.crud.library.repository;
 
 import com.crud.library.domain.Item;
 import com.crud.library.domain.ItemStatus;

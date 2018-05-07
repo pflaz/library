@@ -1,4 +1,4 @@
-package com.crud.library.dao;
+package com.crud.library.repository;
 
 import com.crud.library.domain.Borrow;
 import org.springframework.data.repository.CrudRepository;
