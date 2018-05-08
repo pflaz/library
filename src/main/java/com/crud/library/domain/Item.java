@@ -38,4 +38,10 @@ public class Item {
         this.title = title;
         this.status = status;
     }
+
+    public Item(int id, ItemStatus status, List<Borrow> borrowList) {
+        this.id = id;
+        this.status = status;
+        this.borrowList = borrowList;
+    }
 }

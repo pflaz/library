@@ -14,10 +14,15 @@ public class ItemDto {
     @JsonProperty("id")
     private int id;
     @JsonProperty("title")
-    private Title title;
-    @JsonProperty("itemStatus")
-    private ItemStatus itemStatus;
+    private TitleDto titleDto;
+    @JsonProperty("status")
+    private ItemStatus status;
     @JsonProperty("borrowList")
-    private List<Borrow> borrowList;
+    private List<BorrowDto> borrowDtoList;
 
+    public ItemDto(int id, ItemStatus status, List<BorrowDto> borrowDtoList) {
+        this.id = id;
+        this.status = status;
+        this.borrowDtoList = borrowDtoList;
+    }
 }

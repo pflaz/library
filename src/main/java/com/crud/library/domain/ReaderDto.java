@@ -21,6 +21,6 @@ public class ReaderDto {
     @JsonProperty("created")
     private LocalDateTime created;
     @JsonProperty("borrowList")
-    private List<Borrow> borrowList;
+    private List<BorrowDto> borrowDtoList;
 
 }

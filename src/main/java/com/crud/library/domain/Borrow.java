@@ -37,6 +37,12 @@ public class Borrow {
         this.borrowDateTime = borrowDateTime;
     }
 
+    public Borrow(int id, LocalDateTime borrowDateTime, LocalDateTime returnDateTime) {
+        this.id = id;
+        this.borrowDateTime = borrowDateTime;
+        this.returnDateTime = returnDateTime;
+    }
+
     public void setReturnDateTime(LocalDateTime returnDateTime) {
         this.returnDateTime = returnDateTime;
     }

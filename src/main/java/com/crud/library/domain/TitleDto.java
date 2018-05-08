@@ -20,6 +20,6 @@ public class TitleDto {
     @JsonProperty("releaseYear")
     private int releaseYear;
     @JsonProperty("itemList")
-    private List<Item> itemList;
+    private List<ItemDto> itemDtoList;
 
 }
