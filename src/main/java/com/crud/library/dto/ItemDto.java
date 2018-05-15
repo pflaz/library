@@ -1,10 +1,12 @@
-package com.crud.library.domain;
+package com.crud.library.dto;
 
+import com.crud.library.domain.ItemStatus;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor
@@ -18,7 +20,7 @@ public class ItemDto {
     @JsonProperty("status")
     private ItemStatus status;
     @JsonProperty("borrowList")
-    private List<BorrowDto> borrowDtoList;
+    private List<BorrowDto> borrowDtoList = new ArrayList<>();
 
     public ItemDto(int id, ItemStatus status, List<BorrowDto> borrowDtoList) {
         this.id = id;

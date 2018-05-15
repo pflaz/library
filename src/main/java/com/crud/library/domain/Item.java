@@ -44,4 +44,12 @@ public class Item {
         this.status = status;
         this.borrowList = borrowList;
     }
+
+    public void setTitle(Title title) {
+        this.title = title;
+    }
+
+    public void setStatus(ItemStatus status) {
+        this.status = status;
+    }
 }

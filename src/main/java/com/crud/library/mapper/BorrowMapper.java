@@ -1,7 +1,7 @@
 package com.crud.library.mapper;
 
 import com.crud.library.domain.Borrow;
-import com.crud.library.domain.BorrowDto;
+import com.crud.library.dto.BorrowDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

@@ -1,7 +1,7 @@
 package com.crud.library.mapper;
 
 import com.crud.library.domain.Reader;
-import com.crud.library.domain.ReaderDto;
+import com.crud.library.dto.ReaderDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

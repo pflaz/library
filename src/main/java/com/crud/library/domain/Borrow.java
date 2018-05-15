@@ -46,4 +46,16 @@ public class Borrow {
     public void setReturnDateTime(LocalDateTime returnDateTime) {
         this.returnDateTime = returnDateTime;
     }
+
+    public void setItem(Item item) {
+        this.item = item;
+    }
+
+    public void setReader(Reader reader) {
+        this.reader = reader;
+    }
+
+    public void setBorrowDateTime(LocalDateTime borrowDateTime) {
+        this.borrowDateTime = borrowDateTime;
+    }
 }

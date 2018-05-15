@@ -1,4 +1,4 @@
-package com.crud.library.domain;
+package com.crud.library.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

@@ -34,7 +34,7 @@ public class ItemDaoTestSuite {
         Assert.assertNotEquals(0, id);
 
         //CleanUp
-        titleDao.delete(title);
+//        titleDao.delete(title);
     }
 
     @Test

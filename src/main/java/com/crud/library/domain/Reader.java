@@ -37,4 +37,8 @@ public class Reader {
         this.lastName = lastName;
         this.created = created;
     }
+
+    public void setCreated(LocalDateTime created) {
+        this.created = created;
+    }
 }

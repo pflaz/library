@@ -1,4 +1,4 @@
-package com.crud.library.domain;
+package com.crud.library.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor
@@ -21,6 +22,6 @@ public class ReaderDto {
     @JsonProperty("created")
     private LocalDateTime created;
     @JsonProperty("borrowList")
-    private List<BorrowDto> borrowDtoList;
+    private List<BorrowDto> borrowDtoList = new ArrayList<>();
 
 }

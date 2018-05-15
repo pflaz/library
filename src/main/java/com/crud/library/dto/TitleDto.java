@@ -1,10 +1,11 @@
-package com.crud.library.domain;
+package com.crud.library.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor
@@ -20,6 +21,6 @@ public class TitleDto {
     @JsonProperty("releaseYear")
     private int releaseYear;
     @JsonProperty("itemList")
-    private List<ItemDto> itemDtoList;
+    private List<ItemDto> itemDtoList = new ArrayList<>();
 
 }
