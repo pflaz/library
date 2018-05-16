@@ -2,7 +2,6 @@ package com.crud.library.controller;
 
 import com.crud.library.domain.ItemStatus;
 import com.crud.library.dto.BorrowDto;
-import com.crud.library.dto.ItemDto;
 import com.crud.library.mapper.BorrowMapper;
 import com.crud.library.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,16 +29,16 @@ public class BorrowController {
 
     @RequestMapping(method = RequestMethod.POST, value="borrowBook", consumes = APPLICATION_JSON_VALUE)
     public BorrowDto borrowBook(@RequestParam int readerId, @RequestParam int itemId, @RequestBody BorrowDto borrowDto) throws ReaderNotExistsException, ItemNotExistsException, ItemIsNotFreeException {
-        return borrowMapper.MapToBorrowDto(
+        return borrowMapper.mapToBorrowDto(
                 dbService.addBorrowToReaderAndItem(
-                        borrowMapper.MapToBorrow(borrowDto), readerId, itemId
+                        borrowMapper.mapToBorrow(borrowDto), readerId, itemId
                 )
         );
     }
 
     @RequestMapping(method = RequestMethod.PUT, value="setBorrowStatus", consumes = APPLICATION_JSON_VALUE)
     public BorrowDto setBorrowStatus(@RequestParam int borrowId, @RequestParam ItemStatus itemStatus) throws ItemNotExistsException, BorrowNotExistsException {
-        return borrowMapper.MapToBorrowDto(
+        return borrowMapper.mapToBorrowDto(
                 dbService.saveBorrowAndSetItemStatus(
                         borrowId, itemStatus
                 )

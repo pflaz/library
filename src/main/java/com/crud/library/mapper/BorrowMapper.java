@@ -10,9 +10,8 @@ import java.util.stream.Collectors;
 
 @Component
 public class BorrowMapper {
-    @Autowired
-    private ReaderMapper readerMapper;
-    public Borrow MapToBorrow(final BorrowDto borrowDto) {
+
+    public Borrow mapToBorrow(final BorrowDto borrowDto) {
         return new Borrow(
           borrowDto.getId(),
           borrowDto.getBorrowDateTime(),
@@ -20,7 +19,7 @@ public class BorrowMapper {
         );
     }
 
-    public BorrowDto MapToBorrowDto(final Borrow borrow) {
+    public BorrowDto mapToBorrowDto(final Borrow borrow) {
 
         return new BorrowDto(
                 borrow.getId(),
